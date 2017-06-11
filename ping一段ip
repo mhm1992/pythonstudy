@@ -1,0 +1,7 @@
+import os
+print('连续ping')
+a=0
+while a<50:
+	
+	a+=1
+	os.system('ping -n 1 -w 100 172.172.92.'+str(a)+' | find "TTL" >>d:\\1.txt')
