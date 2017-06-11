@@ -1,7 +1,4 @@
 import os
-print('连续ping')
-a=0
-while a<50:
-	
-	a+=1
-	os.system('ping -n 1 -w 100 172.172.92.'+str(a)+' | find "TTL" >>d:\\1.txt')
+for a in range(88,96):
+	for b in range(1,255):
+		os.system('ping -n 1 -w 100 172.172.'+str(a)+'.'+str(b)+' | find "TTL" >>d:\\88.95.txt')
