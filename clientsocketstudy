@@ -1,0 +1,9 @@
+ #coding=utf-8
+from socket import *
+msocket=socket(AF_INET,SOCK_STREAM)
+host='127.0.0.1'
+port=2048
+bb=(host,port)
+msocket.connect(bb)
+data=input('>>>>')
+msocket.send(data.encode('utf8'))
