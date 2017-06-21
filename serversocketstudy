@@ -1,0 +1,12 @@
+ #coding=utf-8
+from socket import * 
+msocket=socket(AF_INET,SOCK_STREAM)
+host='127.0.0.1'
+port=2048
+bb=(host,port)
+msocket.bind(bb)
+msocket.listen(5)
+a,b=msocket.accept()
+data=a.recv(1024)
+print(data.decode('utf8'))	
+input('稍等')
